@@ -11,11 +11,11 @@ For this challenge we are going to find the length of the shortest distance betw
 
 In other words, the algorithm checks the adjacent vertices first (the closest ones to the starting vertex), and then checks the vertices adjacent to those. Since it always checks the closest vertices first, and the furthest last, it's perfect for finding the shortest distance between two vertices!
 
-You should know that this type of search can also help us find the shorest path between two points!
+You should know that this type of search can also help us find the shortest path between two points!
 
 ## find_distance(graph, vertex_a, vertex_b) / findDistance(graph, vertexA, vertexB)
 
-Use BFS to return the shortest distance between vertex A and B. If there is no path, return -1. The graph and vertices will always be valid. We will be using a directed disconnected graph.
+Use BFS to return the shortest distance from vertex A to B. If there is no path, return -1. The graph and vertices will always be valid. We will be using a directed disconnected graph.
 
 ```
 graph = {
