@@ -41,6 +41,16 @@ if (require.main === module) {
   console.log("Expecting: -1");
   console.log(findDistance(graph, "dave", "carl"));
 
+  console.log("");
+
+  console.log("Expecting: -1");
+  console.log(findDistance(graph, "jan", "jan"));
+
+  console.log("");
+
+  console.log("Expecting: -1");
+  console.log(findDistance(graph, "jambaby", "carl"));
+
   graph = {
     jan: ["cranberry", "jamboree"],
     john: ["jambaby"],

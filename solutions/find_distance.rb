@@ -37,6 +37,16 @@ if __FILE__ == $PROGRAM_NAME
   puts "Expecting: -1"
   puts find_distance(graph, :dave, :carl)
 
+  puts
+
+  puts "Expecting: -1"
+  puts find_distance(graph, :jan, :jan)
+
+  puts
+
+  puts "Expecting: -1"
+  puts find_distance(graph, :jambaby, :carl)
+
   # Don't forget to add your own!
 
   graph = {

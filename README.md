@@ -15,7 +15,9 @@ You should know that this type of search can also help us find the shortest path
 
 ## find_distance(graph, vertex_a, vertex_b) / findDistance(graph, vertexA, vertexB)
 
-Use BFS to return the shortest distance from vertex A to B. If there is no path, return -1. The graph and vertices will always be valid. We will be using a directed disconnected graph.
+Use BFS to return the shortest distance from vertex A to B. If there is no path, return -1. The graph and vertices will always be valid. The graph will always contain vertices and vertices A and B will always be in the graph. We will be using a directed disconnected graph. 
+
+If you are asked to find the distance from a vertex back to itself, i.e. a cycle, return the distance of the cycle, rather than 0. Be aware that there might not be a cycle.
 
 ```
 graph = {
@@ -33,7 +35,7 @@ find_distance(graph, "dave", "carl")
 => -1
 ```
 
-_Hint: A BFS is normally implemented as an iterative algorithm that uses a queue to track which vertices to visit next. Be careful of loops!_
+_Hint: A BFS is normally implemented as an iterative algorithm that uses a queue to track which vertices to visit next. Be careful of cycles!_
 
 Use the language of your choosing. We've included starter files for some languages where you can pseudocode, explain your solution and code.
 
