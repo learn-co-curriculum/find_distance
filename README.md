@@ -2,7 +2,7 @@
 
 **Fork and then clone me!**
 
-![Friends graph](./graph.jpg)
+![Friends graph](https://curriculum-content.s3.amazonaws.com/data-structures-and-algorithms/find-distance/graph.jpg)
 
 For this challenge we are going to find the length of the shortest distance between two friends (or vertices, rather, which represent friends). To achieve this we'll need to perform a breadth-first search (BFS). Unlike depth-first search (DFS), which travels all the way down a path, a BFS considers all adjacent vertices on each iteration. If we were to do a BFS on the friends graph to find the shortest distance from jan to carl, it might check the friends like so:
 
@@ -16,7 +16,7 @@ You should know that this type of search can also help us find the shortest path
 
 ## find_distance(graph, vertex_a, vertex_b) / findDistance(graph, vertexA, vertexB)
 
-Use BFS to return the shortest distance from vertex A to B. If there is no path, return -1. The graph and vertices will always be valid. The graph will always contain vertices and vertices A and B will always be in the graph. We will be using a directed disconnected graph. 
+Use BFS to return the shortest distance from vertex A to B. If there is no path, return -1. The graph and vertices will always be valid. The graph will always contain vertices and vertices A and B will always be in the graph. We will be using a directed disconnected graph.
 
 If you are asked to find the distance from a vertex back to itself, i.e. a cycle, return the distance of the cycle, rather than 0. Be aware that there might not be a cycle.
 
